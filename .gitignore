@@ -1,0 +1,7 @@
+/venv/lib/python3.7/site-packages/
+/venv/
+/.idea/
+/TestingCalc/.pytest_cache
+.pytest_cache
+/calc_code/__pycache__
+/TestingCalc/__pycache__
