@@ -19,8 +19,8 @@ def pytest_collection_modifyitems(items):
         item._nodeid = item.nodeid.encode("utf-8").decode("unicode_escape")
 
 
-@pytest.fixture(autouse=True)
-def login():
+@pytest.fixture()
+def upAndDown(request):
     print("*****【开始计算】*****")
-    yield
+    yield request.param
     print("*****【计算结束】*****")
